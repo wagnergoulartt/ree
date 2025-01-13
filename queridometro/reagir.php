@@ -1,5 +1,17 @@
 <?php
 session_start();
+
+
+$status = json_decode(file_get_contents('./status_paginas.txt'), true);
+if ($status['reagir'] === false) {  // Mudança aqui
+    echo '<div style="text-align: center; padding: 50px; font-size: 18px;">
+            <h2>Página Temporariamente Indisponível</h2>
+            <p>O Queridômetro está temporariamente desativado.</p>
+          </div>';
+    exit;
+}
+
+
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     header("Location: ../login.php");
     exit;
