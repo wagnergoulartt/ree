@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #808080;
+  padding: 40px 15px 15px 15px; /* Ajusta o padding geral, com mais espaço no topo */
+  position: relative; /* Para posicionamento do botão logout */
+}
+
+h1,
+p,
+a {
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+input,
+textarea,
+button,
+select {
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select {
+  padding: 16px;
+  border: 2px solid #808080; /* Cor cinza nas bordas */
+}
+
+input,
+button,
+select {
+  height: 40px;
+}
+
+textarea {
+  height: auto; /* Permite o ajuste automático de altura */
+}
+
+select {
+  height: auto; /* Permite o ajuste automático de altura */
+}
+
+button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  height: 48px;
+}
+
+button img {
+  margin-right: 8px;
+}
+
+a {
+  color: #25d366;
+}
+
+button.whatsapp {
+  background-color: #25d366;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  height: 48px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button.whatsapp:hover {
+  background-color: #128c7e;
+  float: left;
+}
+
+button.whatsapp img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
